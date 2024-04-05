@@ -5,11 +5,11 @@
 class Joven < Formula
   desc ""
   homepage "https://github.com/netvolart/joven"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
-    url "https://github.com/netvolart/joven/releases/download/v0.0.2/joven_0.0.2_darwin_all.tar.gz"
-    sha256 "e13f55d941b139612d6b3c62d41e2448ba1106b46b095cf68b6f1d305814790c"
+    url "https://github.com/netvolart/joven/releases/download/v0.0.3/joven_0.0.3_darwin_all.tar.gz"
+    sha256 "ebdb9dc95e0250fa75d60e43cc6971dfdf4de1c486f14369328c5b8445e2898f"
 
     def install
       bin.install "joven"
@@ -18,16 +18,16 @@ class Joven < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/netvolart/joven/releases/download/v0.0.2/joven_0.0.2_linux_amd64.tar.gz"
-      sha256 "4f2d70065bba84759b1b63154cacc9078634ca1e8b9ace857696bf5e72771a69"
+      url "https://github.com/netvolart/joven/releases/download/v0.0.3/joven_0.0.3_linux_amd64.tar.gz"
+      sha256 "1201e80aa3ff3a0bf1de42660dddf7437c5377783121dab6953738d5ac68aa28"
 
       def install
         bin.install "joven"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/netvolart/joven/releases/download/v0.0.2/joven_0.0.2_linux_arm64.tar.gz"
-      sha256 "e4b14a5a81c8cb122033ecac1ce9a59a9b923a964ae05bca8caa92ae452b144e"
+      url "https://github.com/netvolart/joven/releases/download/v0.0.3/joven_0.0.3_linux_arm64.tar.gz"
+      sha256 "05e6d61d60a65b0e9cced1c66ab1b668509a9fe945bd8c1b9569940110d1c921"
 
       def install
         bin.install "joven"
